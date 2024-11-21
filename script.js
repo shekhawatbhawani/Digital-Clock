@@ -3,7 +3,7 @@ let minute = document.querySelector(".minute")
 let sec = document.querySelector(".sec")
 let am = document.querySelector(".am")
 
- am = "AM"
+ let  pmam = "AM"
  
 function upDateClock(){
     
@@ -18,14 +18,14 @@ console.log(pm);
 
 if (hr > 12) {
     hr = hr-12
-    pm = "PM"
+    pmam = "PM"
 }
 
 
 hour.textContent = hr
 minute.textContent = min
 sec.textContent = s
-am.textContent = pm
+am.textContent = pmam
 
 setInterval(()=>{
     upDateClock()
